@@ -1,6 +1,6 @@
 {
   "name": "@antora-supplemental/playbook-pin-auditor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CLI: audit package.json + playbook extension pins for floating #main / missing refs; prefer #vX.Y.Z",
   "license": "MIT",
   "author": "Ryan Johnson (https://github.com/AMDphreak)",
