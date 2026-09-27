@@ -1,0 +1,47 @@
+{
+  "name": "@antora-supplemental/playbook-pin-auditor",
+  "version": "0.1.0",
+  "description": "CLI: audit package.json + playbook extension pins for floating #main / missing refs; prefer #vX.Y.Z",
+  "license": "MIT",
+  "author": "Ryan Johnson (https://github.com/AMDphreak)",
+  "keywords": [
+    "antora",
+    "playbook",
+    "semver",
+    "pin",
+    "github"
+  ],
+  "homepage": "https://github.com/antora-supplemental/playbook-pin-auditor",
+  "bugs": {
+    "url": "https://github.com/antora-supplemental/playbook-pin-auditor/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antora-supplemental/playbook-pin-auditor.git"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "bin": {
+    "playbook-pin-auditor": "bin/playbook-pin-auditor.js"
+  },
+  "files": [
+    "bin/**/*",
+    "lib/**/*",
+    "README.adoc",
+    "CHANGELOG.adoc",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

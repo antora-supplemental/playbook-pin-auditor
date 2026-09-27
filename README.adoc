@@ -1,0 +1,24 @@
+= Playbook Pin Auditor
+:description: Audit package.json + playbook extension pins; prefer GitHub SemVer #vX.Y.Z.
+:page-orig-author: Ryan Johnson
+:page-last-edited: 2026-09-27
+
+**Playbook Pin Auditor** checks `package.json` dependency specs (and optional Antora playbook `require`s) for floating GitHub refs (`#main`, `#master`) and missing refs. Prefers `github:org/repo#vX.Y.Z`.
+
+No npm publish is required for Antora Supplemental packages — GitHub SemVer URL pins are the primary distribution path.
+
+Support: support@devcentr.org
+
+== Install
+
+[source,bash]
+----
+pnpm add -D github:antora-supplemental/playbook-pin-auditor#v0.1.0
+----
+
+== CLI
+
+[source,bash]
+----
+npx playbook-pin-auditor --root . --playbook antora-playbook.yml --fail
+----
